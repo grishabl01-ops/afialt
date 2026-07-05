@@ -26,6 +26,8 @@ const securityHeaders = [
       "font-src 'self' data:",
       // Form posts to our own /api/lead; Telegram call happens server-side.
       "connect-src 'self'",
+      // Embedded Yandex Maps widget in the infrastructure section.
+      "frame-src 'self' https://yandex.ru https://*.yandex.ru",
       "frame-ancestors 'self'",
       "base-uri 'self'",
       "form-action 'self'",
