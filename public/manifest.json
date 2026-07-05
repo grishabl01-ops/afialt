@@ -1,0 +1,14 @@
+{
+  "name": "АФИАЛЬТ — ЖК бизнес-класса в Москве",
+  "short_name": "АФИАЛЬТ",
+  "description": "АФИАЛЬТ — ЖК бизнес-класса на северо-востоке Москвы. Семь башен, парки и инфраструктура в шаговой доступности.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfcfc",
+  "theme_color": "#282828",
+  "lang": "ru",
+  "icons": [
+    { "src": "/seo/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/seo/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
