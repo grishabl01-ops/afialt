@@ -31,6 +31,8 @@ const securityHeaders = [
       "connect-src 'self' https://mc.yandex.ru",
       // Embedded Yandex Maps widget + Metrika webvisor (mc.yandex.ru).
       "frame-src 'self' https://yandex.ru https://*.yandex.ru",
+      // Metrika webvisor records sessions via a blob-based web worker.
+      "worker-src 'self' blob:",
       "frame-ancestors 'self'",
       "base-uri 'self'",
       "form-action 'self'",
