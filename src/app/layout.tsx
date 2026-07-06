@@ -68,6 +68,10 @@ export const metadata: Metadata = {
     apple: [{ url: "/seo/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/manifest.json",
+  verification: {
+    google: "08pvJHXejT7NY_8FJvLogyaISukC7efXykFkdomUO_w",
+    yandex: "ce19859d24a5b44f",
+  },
 };
 
 export const viewport: Viewport = {
