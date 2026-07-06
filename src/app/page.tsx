@@ -14,6 +14,7 @@ import { Community } from "@/components/sections/Community";
 import { Security } from "@/components/sections/Security";
 import { Architecture } from "@/components/sections/Architecture";
 import { GallerySlider } from "@/components/sections/GallerySlider";
+import { Faq } from "@/components/sections/Faq";
 import { ConsultationForm } from "@/components/sections/ConsultationForm";
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
         />
         <Architecture />
         <GallerySlider />
+        <Faq />
         <ConsultationForm />
       </main>
       <Footer />

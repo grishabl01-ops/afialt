@@ -95,7 +95,29 @@ const jsonLd = {
         addressLocality: "Москва",
         addressCountry: "RU",
       },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 55.853294,
+        longitude: 37.579951,
+      },
       areaServed: "Москва",
+    },
+    {
+      "@type": "ApartmentComplex",
+      "@id": `${SITE_URL}/#residence`,
+      name: "ЖК АФИАЛЬТ",
+      url: SITE_URL,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Алтуфьевское шоссе, д. 11, к. 2",
+        addressLocality: "Москва",
+        addressCountry: "RU",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 55.853294,
+        longitude: 37.579951,
+      },
     },
     {
       "@type": "WebSite",
