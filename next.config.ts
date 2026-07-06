@@ -20,13 +20,16 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Next.js injects small inline scripts; 'unsafe-inline' is required for them.
-      "script-src 'self' 'unsafe-inline'",
+      // mc.yandex.ru — Yandex.Metrika counter (tag.js).
+      "script-src 'self' 'unsafe-inline' https://mc.yandex.ru",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob:",
+      // mc.yandex.ru — Metrika tracking pixel / webvisor assets.
+      "img-src 'self' data: blob: https://mc.yandex.ru",
       "font-src 'self' data:",
       // Form posts to our own /api/lead; Telegram call happens server-side.
-      "connect-src 'self'",
-      // Embedded Yandex Maps widget in the infrastructure section.
+      // mc.yandex.ru — Metrika data + webvisor uploads.
+      "connect-src 'self' https://mc.yandex.ru",
+      // Embedded Yandex Maps widget + Metrika webvisor (mc.yandex.ru).
       "frame-src 'self' https://yandex.ru https://*.yandex.ru",
       "frame-ancestors 'self'",
       "base-uri 'self'",

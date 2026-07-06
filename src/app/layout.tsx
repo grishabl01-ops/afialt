@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
+import { YandexMetrika } from "@/components/YandexMetrika";
 
 // Body font — matches afialt.ru's Manrope (latin + cyrillic)
 const manrope = Manrope({
@@ -122,6 +123,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <YandexMetrika />
         {children}
       </body>
     </html>
