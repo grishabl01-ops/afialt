@@ -21,7 +21,9 @@ export function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-[1312px] px-4 sm:px-8 lg:px-10">
         <div className="max-w-[760px]">
           <h1 className="afialt-text-outline afialt-heading text-[#fcfcfc] text-[40px] leading-[0.98] sm:text-[52px] lg:text-[65px]">
-            <span className="sr-only">ЖК АФИАЛЬТ — </span>
+            <span className="sr-only">
+              ЖК АФИАЛЬТ — новостройка бизнес-класса в Отрадном, СВАО.{" "}
+            </span>
             <span className="block">Главный аккорд</span>
             <span className="block pl-[38%] sm:pl-[42%]">Района</span>
           </h1>

@@ -17,6 +17,9 @@ export function Symphony() {
         </RevealSection>
 
         <RevealSection className="flex flex-col lg:pt-4">
+          <p className="mb-4 text-right text-[13px] uppercase tracking-[0.14em] text-[#979797]">
+            Новостройка бизнес-класса · Отрадное, СВАО
+          </p>
           <DisplayHeading
             className="text-right text-[34px] leading-[1.02] sm:text-[46px] lg:text-[60px]"
             lines={[
@@ -29,8 +32,8 @@ export function Symphony() {
               Семь башен высотой от 16 до 58 этажей складываются в единый
               ансамбль, в основе которого — образ альта. Плавные линии
               фасадов, динамичные объёмы и разновысотный силуэт формируют
-              выразительную композицию — новый архитектурный ориентир
-              северо-востока Москвы.
+              выразительную композицию — новый ориентир бизнес-класса в
+              Отрадном, на северо-востоке Москвы.
             </p>
             <div className="relative aspect-[16/11] w-full max-w-[460px] overflow-hidden">
               <Image
