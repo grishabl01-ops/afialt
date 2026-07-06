@@ -1,7 +1,8 @@
+import { METRIKA_COUNTER_ID as COUNTER_ID } from "@/lib/metrika";
+
 // Yandex.Metrika counter for afialt.live (webvisor + clickmap enabled).
 // Rendered as a plain inline script (like the official snippet) so it runs as
 // early as possible, independent of React hydration.
-const COUNTER_ID = 110449703;
 
 const snippet = `
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

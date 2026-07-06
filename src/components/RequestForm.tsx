@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { DOCS } from "@/lib/links";
+import { METRIKA_COUNTER_ID, METRIKA_LEAD_GOAL } from "@/lib/metrika";
 
 interface RequestFormProps {
   title?: string;
@@ -30,7 +31,13 @@ export function RequestForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, phone, source: title, company }),
       });
-      setStatus(res.ok ? "sent" : "error");
+      if (res.ok) {
+        setStatus("sent");
+        // Track the conversion in Yandex.Metrika (no-op if Metrika is blocked).
+        window.ym?.(METRIKA_COUNTER_ID, "reachGoal", METRIKA_LEAD_GOAL);
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }
